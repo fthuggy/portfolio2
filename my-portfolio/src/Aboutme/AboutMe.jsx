@@ -43,7 +43,8 @@ function AboutMePopup({ onClose }) {
             contributing as part of a team.
             <br />
             <br />
-            With a background in <strong>communication</strong> and <strong>project management</strong>, I’ve developed strong
+            With a background in <strong>communication</strong> and{" "}
+            <strong>project management</strong>, I’ve developed strong
             collaboration and leadership skills that have been invaluable in
             team projects during my studies. My experience also helps me think
             strategically about design, content, and user experience, ensuring
@@ -74,6 +75,11 @@ function AboutMePopup({ onClose }) {
               id="icons"
               src="/images/react-1-logo-svgrepo-com.svg"
               alt="React icon"
+            />
+            <img
+              id="icons"
+              src="/images/github-142-svgrepo-com.svg"
+              alt="Github icon"
             />
             <img
               id="icons"
