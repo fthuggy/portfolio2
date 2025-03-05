@@ -19,14 +19,14 @@ function MyWorkPopup({ onClose }) {
             <a href="https://github.com/fthuggy/TTT" target="_blank">
               <img
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"
-                className="git-logo"
+                className="collab-git-logo"
                 alt="GitHub logo"
               />
             </a>
             <a href="https://fthuggy.github.io/TTT/" target="_blank">
               <img
                 src="./images/link-svgrepo-com.svg"
-                className="link-logo"
+                className="collab-link-logo"
                 alt="logo and direct link"
               />
             </a>
@@ -45,14 +45,14 @@ function MyWorkPopup({ onClose }) {
             <a href="https://github.com/fthuggy/weather-app" target="_blank">
               <img
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"
-                className="git-logo"
+                className="collab-git-logo"
                 alt="GitHub logo"
               />
             </a>
             <a href="https://whtrapp.netlify.app/" target="_blank">
               <img
                 src="./images/link-svgrepo-com.svg"
-                className="link-logo"
+                className="collab-link-logo"
                 alt="logo and direct link"
               />
             </a>
@@ -72,14 +72,14 @@ function MyWorkPopup({ onClose }) {
             <a href="https://github.com/fthuggy/quiz" target="_blank">
               <img
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"
-                className="git-logo"
+                className="collab-link-logo"
                 alt="GitHub logo"
               />
             </a>
             <a href="https://quiz-ten-bay.vercel.app/" target="_blank">
               <img
                 src="./images/link-svgrepo-com.svg"
-                className="link-logo"
+                className="collab-link-logo"
                 alt="logo and direct link"
               />
             </a>

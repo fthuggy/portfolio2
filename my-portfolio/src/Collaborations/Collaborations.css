@@ -1,0 +1,98 @@
+.collab-popup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.25);
+    overflow-y: auto;
+  }
+  
+  .collab-portfolio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 70%; 
+    max-width: 600px; 
+    background-color: #fff;
+    padding: 15px; 
+    border-radius: 8px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border: 2px solid #000;
+    position: relative;
+  }
+  
+  #collab-exit-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 25px;
+    height: auto;
+    cursor: pointer;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 15px; 
+    font-family: "Kindergarten", sans-serif;
+  }
+  
+  .collab-projects {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 10px; 
+    width: 100%;
+    justify-items: center; 
+  }
+  
+  .collab-project {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border: 2px solid #000;
+    text-align: center;
+    width: 100%;
+    max-width: 250px; 
+  }
+  
+  .collab-project img.collab-project-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    border: 2px solid #000;
+  }
+  
+  .collab-project h3 {
+    margin-top: 5px;
+    font-family: "Kindergarten", sans-serif;
+    font-size: 1.2rem;
+  }
+  
+  .collab-project p {
+    margin-top: 10px;
+    font-size: 0.8rem;
+    line-height: 1.5;
+  }
+  
+  .collab-project a {
+    display: inline-block;
+    margin-top: 10px;
+  }
+  
+  .collab-git-logo,
+  .collab-link-logo {
+    width: 20px;
+    height: auto;
+    margin: 0 5px;
+    transition: transform 0.3s ease;
+  }
+  
+  .collab-git-logo:hover,
+  .collab-link-logo:hover {
+    transform: scale(1.1);
+  }

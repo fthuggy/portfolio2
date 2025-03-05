@@ -22,10 +22,10 @@ function ContactPopup({ onClose }) {
                 alt="GitHub logo"
               />
             </a>
-            <a href="https://www.linkedin.com/in/fatou-taal/" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/in/fatoutaal/" target="_blank" rel="noopener noreferrer">
               <img
                 src="./images/icons8-linkedin.svg"
-                className="git-logo"
+                className="link-logo"
                 alt="LinkedIn logo"
               />
             </a>

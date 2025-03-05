@@ -4,16 +4,19 @@ import AboutMePopup from "./Aboutme/AboutMe";
 import CvPopup from "./CV/CV";
 import MyWorkPopup from "./Mywork/MyWork";
 import ContactPopup from "./Contact/Contact";
+import CollabPopup from "./Collaborations/Collaborations";
 
 function App() {
   const [showAboutMePopup, setShowAboutMePopup] = useState(false);
   const [showCvPopup, setShowCvPopup] = useState(false);
   const [showMyWorkPopup, setShowMyWorkPopup] = useState(false);
-  const [showContactPopup, setShowContactPopup] = useState(false); // Added state for contact popup
+  const [showContactPopup, setShowContactPopup] = useState(false);
+  const [showCollabPopup, setShowCollabPopup] = useState(false); // Added state for collab popup
   const [dropDownAboutMe, setDropDownAboutMe] = useState(false);
   const [dropDownCv, setDropDownCv] = useState(false);
   const [dropDownMyWork, setDropDownMyWork] = useState(false);
-  const [dropDownContact, setDropDownContact] = useState(false); // Corrected state name
+  const [dropDownContact, setDropDownContact] = useState(false);
+  const [dropDownCollab, setDropDownCollab] = useState(false); // Corrected state name
 
   const handleOpenAboutMePopup = () => {
     setDropDownAboutMe(true);
@@ -43,7 +46,7 @@ function App() {
     setDropDownMyWork(true);
     setTimeout(() => {
       setShowMyWorkPopup(true);
-    }, 300); // Match the duration of the CSS transition
+    }, 300); 
   };
 
   const handleCloseMyWorkPopup = () => {
@@ -55,12 +58,24 @@ function App() {
     setDropDownContact(true);
     setTimeout(() => {
       setShowContactPopup(true);
-    }, 300); // Match the duration of the CSS transition
+    }, 300); 
   };
 
   const handleCloseContactPopup = () => {
     setShowContactPopup(false);
     setDropDownContact(false);
+  };
+
+  const handleOpenCollabPopup = () => {
+    setDropDownCollab(true);
+    setTimeout(() => {
+      setShowCollabPopup(true);
+    }, 300); 
+  };
+
+  const handleCloseCollabPopup = () => {
+    setShowCollabPopup(false);
+    setDropDownCollab(false);
   };
 
   return (
@@ -77,7 +92,7 @@ function App() {
           <button className={`btn ${dropDownMyWork ? "drop-down" : ""}`} id="btn2" onClick={handleOpenMyWorkPopup}>
             Projects
           </button>
-          <button className="btn" id="btn2">
+          <button className={`btn ${dropDownCollab ? "drop-down" : ""}`} id="btn2" onClick={handleOpenCollabPopup}>
             Collaborations
           </button>
           <button className={`btn ${dropDownCv ? "drop-down" : ""}`} id="btn2" onClick={handleOpenCvPopup}>
@@ -91,7 +106,8 @@ function App() {
       {showAboutMePopup && <AboutMePopup onClose={handleCloseAboutMePopup} />}
       {showCvPopup && <CvPopup onClose={handleCloseCvPopup} />}
       {showMyWorkPopup && <MyWorkPopup onClose={handleCloseMyWorkPopup} />}
-      {showContactPopup && <ContactPopup onClose={handleCloseContactPopup} />} {/* Corrected condition */}
+      {showContactPopup && <ContactPopup onClose={handleCloseContactPopup} />}
+      {showCollabPopup && <CollabPopup onClose={handleCloseCollabPopup} />} {/* Corrected condition */}
       <footer>© 2025 Fatou Taal</footer>
     </div>
   );
