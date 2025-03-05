@@ -3,14 +3,17 @@ import "./App.css";
 import AboutMePopup from "./Aboutme/AboutMe";
 import CvPopup from "./CV/CV";
 import MyWorkPopup from "./Mywork/MyWork";
+import ContactPopup from "./Contact/Contact";
 
 function App() {
   const [showAboutMePopup, setShowAboutMePopup] = useState(false);
   const [showCvPopup, setShowCvPopup] = useState(false);
-  const [showMyWorkPopup, setShowMyWorkPopup] = useState(false); // Corrected state variable
+  const [showMyWorkPopup, setShowMyWorkPopup] = useState(false);
+  const [showContactPopup, setShowContactPopup] = useState(false); // Added state for contact popup
   const [dropDownAboutMe, setDropDownAboutMe] = useState(false);
   const [dropDownCv, setDropDownCv] = useState(false);
-  const [dropDownMyWork, setDropDownMyWork] = useState(false); // Corrected state variable
+  const [dropDownMyWork, setDropDownMyWork] = useState(false);
+  const [dropDownContact, setDropDownContact] = useState(false); // Corrected state name
 
   const handleOpenAboutMePopup = () => {
     setDropDownAboutMe(true);
@@ -36,7 +39,7 @@ function App() {
     setDropDownCv(false);
   };
 
-  const handleOpenMyWorkPopup = () => { // Corrected function name
+  const handleOpenMyWorkPopup = () => {
     setDropDownMyWork(true);
     setTimeout(() => {
       setShowMyWorkPopup(true);
@@ -46,6 +49,18 @@ function App() {
   const handleCloseMyWorkPopup = () => {
     setShowMyWorkPopup(false);
     setDropDownMyWork(false);
+  };
+
+  const handleOpenContactPopup = () => {
+    setDropDownContact(true);
+    setTimeout(() => {
+      setShowContactPopup(true);
+    }, 300); // Match the duration of the CSS transition
+  };
+
+  const handleCloseContactPopup = () => {
+    setShowContactPopup(false);
+    setDropDownContact(false);
   };
 
   return (
@@ -68,14 +83,15 @@ function App() {
           <button className={`btn ${dropDownCv ? "drop-down" : ""}`} id="btn2" onClick={handleOpenCvPopup}>
             CV
           </button>
-          <button className="btn" id="btn3">
+          <button className={`btn ${dropDownContact ? "drop-down" : ""}`} id="btn3" onClick={handleOpenContactPopup}>
             Contact
           </button>
         </div>
       </div>
       {showAboutMePopup && <AboutMePopup onClose={handleCloseAboutMePopup} />}
       {showCvPopup && <CvPopup onClose={handleCloseCvPopup} />}
-      {showMyWorkPopup && <MyWorkPopup onClose={handleCloseMyWorkPopup} />} {/* Corrected condition */}
+      {showMyWorkPopup && <MyWorkPopup onClose={handleCloseMyWorkPopup} />}
+      {showContactPopup && <ContactPopup onClose={handleCloseContactPopup} />} {/* Corrected condition */}
       <footer>© 2025 Fatou Taal</footer>
     </div>
   );

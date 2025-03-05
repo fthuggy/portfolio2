@@ -1,0 +1,65 @@
+.contactme-popup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+.contactme-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 80%;
+  max-width: 600px;
+  max-height: 70%;
+  overflow-y: auto;
+  position: relative;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border: 2px solid #000;
+}
+
+.contactme-content h2 {
+  font-size: 3rem;
+  margin-top: 20px;
+}
+
+.info-contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.info-contact p {
+  font-size: 1.5rem;
+}
+
+.contact-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.git-logo,
+.link-logo {
+  width: 40px;
+  height: auto;
+  margin: 0 10px;
+  transition: transform 0.3s ease;
+}
+
+.git-logo:hover,
+.link-logo:hover {
+  transform: scale(1.1);
+}
