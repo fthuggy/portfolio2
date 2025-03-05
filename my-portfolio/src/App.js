@@ -1,21 +1,36 @@
 import React, { useState } from "react";
 import "./App.css";
 import AboutMePopup from "./Aboutme/AboutMe";
+import CvPopup from "./CV/CV";
 
 function App() {
-  const [showPopup, setShowPopup] = useState(false);
-  const [dropDown, setDropDown] = useState(false);
+  const [showAboutMePopup, setShowAboutMePopup] = useState(false);
+  const [showCvPopup, setShowCvPopup] = useState(false);
+  const [dropDownAboutMe, setDropDownAboutMe] = useState(false);
+  const [dropDownCv, setDropDownCv] = useState(false);
 
-  const handleOpenPopup = () => {
-    setDropDown(true);
+  const handleOpenAboutMePopup = () => {
+    setDropDownAboutMe(true);
     setTimeout(() => {
-      setShowPopup(true);
-    }, 100); // Match the duration of the CSS transition
+      setShowAboutMePopup(true);
+    }, 300); // Match the duration of the CSS transition
   };
 
-  const handleClosePopup = () => {
-    setShowPopup(false);
-    setDropDown(false);
+  const handleCloseAboutMePopup = () => {
+    setShowAboutMePopup(false);
+    setDropDownAboutMe(false);
+  };
+
+  const handleOpenCvPopup = () => {
+    setDropDownCv(true);
+    setTimeout(() => {
+      setShowCvPopup(true);
+    }, 300); // Match the duration of the CSS transition
+  };
+
+  const handleCloseCvPopup = () => {
+    setShowCvPopup(false);
+    setDropDownCv(false);
   };
 
   return (
@@ -26,7 +41,7 @@ function App() {
       </div>
       <div className="second-box">
         <div className="vertical-btn">
-          <button className={`btn ${dropDown ? "drop-down" : ""}`} id="btn1" onClick={handleOpenPopup}>
+          <button className={`btn ${dropDownAboutMe ? "drop-down" : ""}`} id="btn1" onClick={handleOpenAboutMePopup}>
             About me
           </button>
           <button className="btn" id="btn2">
@@ -35,7 +50,7 @@ function App() {
           <button className="btn" id="btn2">
             Collaborations
           </button>
-          <button className="btn" id="btn2">
+          <button className={`btn ${dropDownCv ? "drop-down" : ""}`} id="btn2" onClick={handleOpenCvPopup}>
             CV
           </button>
           <button className="btn" id="btn3">
@@ -43,7 +58,8 @@ function App() {
           </button>
         </div>
       </div>
-      {showPopup && <AboutMePopup onClose={handleClosePopup} />}
+      {showAboutMePopup && <AboutMePopup onClose={handleCloseAboutMePopup} />}
+      {showCvPopup && <CvPopup onClose={handleCloseCvPopup} />}
       <footer>© 2025 Fatou Taal</footer>
     </div>
   );
