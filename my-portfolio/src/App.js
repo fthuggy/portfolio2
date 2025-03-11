@@ -46,7 +46,7 @@ function App() {
     setDropDownMyWork(true);
     setTimeout(() => {
       setShowMyWorkPopup(true);
-    }, 300); 
+    }, 300);
   };
 
   const handleCloseMyWorkPopup = () => {
@@ -58,7 +58,7 @@ function App() {
     setDropDownContact(true);
     setTimeout(() => {
       setShowContactPopup(true);
-    }, 300); 
+    }, 300);
   };
 
   const handleCloseContactPopup = () => {
@@ -70,7 +70,7 @@ function App() {
     setDropDownCollab(true);
     setTimeout(() => {
       setShowCollabPopup(true);
-    }, 300); 
+    }, 300);
   };
 
   const handleCloseCollabPopup = () => {
@@ -83,22 +83,43 @@ function App() {
       <div className="first-box">
         <h1>Fatou Taal</h1>
         <p className="role">Frontend Developer</p>
+        <p className="do">Pick what you need and let’s connect!</p>
       </div>
       <div className="second-box">
         <div className="vertical-btn">
-          <button className={`btn ${dropDownAboutMe ? "drop-down" : ""}`} id="btn1" onClick={handleOpenAboutMePopup}>
+          <button
+            className={`btn ${dropDownAboutMe ? "drop-down" : ""}`}
+            id="btn1"
+            onClick={handleOpenAboutMePopup}
+          >
             About me
           </button>
-          <button className={`btn ${dropDownMyWork ? "drop-down" : ""}`} id="btn2" onClick={handleOpenMyWorkPopup}>
+          <button
+            className={`btn ${dropDownMyWork ? "drop-down" : ""}`}
+            id="btn2"
+            onClick={handleOpenMyWorkPopup}
+          >
             Projects
           </button>
-          <button className={`btn ${dropDownCollab ? "drop-down" : ""}`} id="btn2" onClick={handleOpenCollabPopup}>
+          <button
+            className={`btn ${dropDownCollab ? "drop-down" : ""}`}
+            id="btn2"
+            onClick={handleOpenCollabPopup}
+          >
             Collaborations
           </button>
-          <button className={`btn ${dropDownCv ? "drop-down" : ""}`} id="btn2" onClick={handleOpenCvPopup}>
+          <button
+            className={`btn ${dropDownCv ? "drop-down" : ""}`}
+            id="btn2"
+            onClick={handleOpenCvPopup}
+          >
             CV
           </button>
-          <button className={`btn ${dropDownContact ? "drop-down" : ""}`} id="btn3" onClick={handleOpenContactPopup}>
+          <button
+            className={`btn ${dropDownContact ? "drop-down" : ""}`}
+            id="btn3"
+            onClick={handleOpenContactPopup}
+          >
             Contact
           </button>
         </div>
@@ -107,8 +128,9 @@ function App() {
       {showCvPopup && <CvPopup onClose={handleCloseCvPopup} />}
       {showMyWorkPopup && <MyWorkPopup onClose={handleCloseMyWorkPopup} />}
       {showContactPopup && <ContactPopup onClose={handleCloseContactPopup} />}
-      {showCollabPopup && <CollabPopup onClose={handleCloseCollabPopup} />} {/* Corrected condition */}
-      <footer>© 2025 Fatou Taal</footer>
+      {showCollabPopup && <CollabPopup onClose={handleCloseCollabPopup} />}{" "}
+      {/* Corrected condition */}
+      <footer className="footer">© 2025 Fatou Taal</footer>
     </div>
   );
 }
