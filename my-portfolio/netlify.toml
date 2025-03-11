@@ -1,4 +1,0 @@
-[build]
-  base = "my-portfolio"
-  command = "yarn build"
-  publish = "build"
