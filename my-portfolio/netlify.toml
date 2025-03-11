@@ -1,0 +1,4 @@
+// filepath: /Users/fatoutaal/portfolio2/my-portfolio/netlify.toml
+[build]
+  command = "yarn build"
+  publish = "build"
