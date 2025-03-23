@@ -53,13 +53,6 @@ h1 {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.fatou-icon {
-  width: 200px;
-  height: auto;
-  margin-top: -100px;
-  margin-left: 350px;
-  transform: rotate(15deg);
-}
 
 .btn {
   background-color: #fff;
@@ -113,7 +106,7 @@ h1 {
   left: 0;
   bottom: 0;
   width: 100%;
-  text-align: left;
+  text-align: center;
   padding: 10px;
 }
 
@@ -126,7 +119,7 @@ h1 {
   pointer-events: none; /* Disable pointer events when hidden */
 }
 
-/* Adjust styles for screens smaller than 600px */
+/*styles for screens smaller than 600px */
 @media (max-width: 600px) {
   .first-box {
     width: 90%;
@@ -135,13 +128,16 @@ h1 {
 
   h1 {
     font-size: 3rem; 
+    
   }
 
   .role {
+    
     font-size: 1.5rem; 
   }
 
   .do {
+    margin-top: 10px;
     font-size: 1rem; 
   }
 
@@ -152,9 +148,9 @@ h1 {
   }
 
   .btn {
-    height: 100px; 
-    width: 93.5px; 
-    font-size: 0.8rem; 
+    height: 70px; 
+    width: 61px; 
+    font-size: 0.5rem; 
    
   }
 
@@ -164,6 +160,50 @@ h1 {
     align-items: center;
   }
   .footer{
+    text-align: center;
+  }
+}
+
+/* Styles for screens between 600px and 900px (e.g., tablets like iPad Mini) */
+@media (min-width: 601px) and (max-width: 900px) {
+  .first-box {
+    width: 95%;
+    height: auto; 
+  }
+
+  h1 {
+    font-size: 4rem; 
+  }
+
+  .role {
+    font-size: 1.8rem; 
+  }
+
+  .do {
+    margin-top: 20px;
+    font-size: 1.1rem; 
+  }
+
+  .fatou-icon {
+    width: 180px; 
+    margin-left: 0; 
+    transform: none; 
+  }
+
+  .btn {
+    height: 100px; 
+    width: 139px; 
+    font-size: 1rem; 
+    
+  }
+
+  .vertical-btn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .footer {
     text-align: center;
   }
 }
