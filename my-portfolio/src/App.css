@@ -64,7 +64,7 @@ h1 {
 .btn {
   background-color: #fff;
   height: 200px;
-  width: 160px;
+  width: 161px;
   border-top: #fff;
   cursor: pointer;
   font-size: 1.4rem;
@@ -130,30 +130,40 @@ h1 {
 @media (max-width: 600px) {
   .first-box {
     width: 90%;
-    height: auto; /* Allow height to adjust based on content */
+    height: auto; 
   }
 
   h1 {
-    font-size: 3rem; /* Smaller font size */
+    font-size: 3rem; 
   }
 
   .role {
-    font-size: 1.5rem; /* Smaller font size */
+    font-size: 1.5rem; 
   }
 
   .do {
-    font-size: 1rem; /* Smaller font size */
+    font-size: 1rem; 
   }
 
   .fatou-icon {
-    width: 150px; /* Smaller icon size */
-    margin-left: 0; /* Center the icon */
-    transform: none; /* Remove rotation */
+    width: 150px; 
+    margin-left: 0; 
+    transform: none; 
   }
 
   .btn {
-    height: 150px; /* Smaller button height */
-    width: 120px; /* Smaller button width */
-    font-size: 1rem; /* Smaller font size */
+    height: 100px; 
+    width: 93.5px; 
+    font-size: 0.8rem; 
+   
+  }
+
+  .vertical-btn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .footer{
+    text-align: center;
   }
 }
