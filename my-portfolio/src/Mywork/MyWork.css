@@ -100,3 +100,12 @@
   .link-logo:hover {
     transform: scale(1.1);
   }
+  /*smaller screens*/
+
+@media (max-width: 600px) {
+}
+
+/*larger screens*/
+
+@media (min-width: 601px) and (max-width: 900px) {
+}

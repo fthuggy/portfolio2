@@ -90,3 +90,13 @@ p {
   font-size: 1rem;
   font-weight: bold;
 }
+
+/*smaller screens*/
+
+@media (max-width: 600px) {
+}
+
+/*larger screens*/
+
+@media (min-width: 601px) and (max-width: 900px) {
+}

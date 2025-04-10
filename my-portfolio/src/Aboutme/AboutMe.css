@@ -85,3 +85,13 @@ p {
   height: auto;
   margin: 0 10px;
 }
+
+/*smaller screens*/
+
+@media (max-width: 600px) {
+}
+
+/*larger screens*/
+
+@media (min-width: 601px) and (max-width: 900px) {
+}
