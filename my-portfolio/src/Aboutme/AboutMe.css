@@ -55,7 +55,7 @@
 
 .info-about-me {
   flex: 1;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   font-family: Arial, Helvetica, sans-serif;
 }
 .info-about-me,
@@ -68,7 +68,7 @@ p {
 .skills {
   margin-top: 20px;
   font-family: "Kindergarten", sans-serif;
-  margin-bottom: 20px;
+  
   
 }
 .skills2 {
