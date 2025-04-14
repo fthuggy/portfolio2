@@ -15,9 +15,9 @@ function AboutMePopup({ onClose }) {
           <img id="Fatou" src="/images/IMG_1049.jpg" alt="Fatou Taal" />
         </div>
         <div className="info-about-me">
-          <h2 className="header-aboutme">About Me</h2>
+          <h2 className="headings-about">About Me</h2>
           <p>
-            Hello! My name is Fatou.
+            Hello! My name is Fatou
             <br></br>
             <br></br>I’m a Frontend Developer student at Hyper Island with a
             strong passion for design and creating user-friendly websites. My
@@ -55,7 +55,7 @@ function AboutMePopup({ onClose }) {
             Take a look at my projects, and feel free to reach out!
           </p>
           <div className="skills">
-            <h2>Technical Skills</h2>
+            <h2 className="headings-about">Technical Skills</h2>
             <img
               id="icons"
               src="/images/html-5-svgrepo-com.svg"
@@ -87,7 +87,9 @@ function AboutMePopup({ onClose }) {
               alt="Figma icon"
             />
             <div className="skills2">
-              <h2>Work Methodologies & Soft Skills</h2>
+              <h2 className="headings-about">
+                Work Methodologies & Soft Skills
+              </h2>
               <ul>
                 <li>
                   <strong>Agile Methodologies (Scrum, Kanban)</strong> –

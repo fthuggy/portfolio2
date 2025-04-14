@@ -53,7 +53,6 @@ h1 {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-
 .btn {
   background-color: #fff;
   height: 200px;
@@ -123,22 +122,20 @@ h1 {
 @media (max-width: 600px) {
   .first-box {
     width: 80%;
-    height: auto; 
+    height: auto;
   }
 
   h1 {
-    font-size: 3rem; 
-    
+    font-size: 3rem;
   }
 
   .role {
-    
-    font-size: 1.5rem; 
+    font-size: 1.5rem;
   }
 
   .do {
     margin-top: 10px;
-    font-size: 1rem; 
+    font-size: 1rem;
   }
 
   /*.fatou-icon {
@@ -148,19 +145,17 @@ h1 {
   }*/
 
   .btn {
-    height: 70px; 
-    width: 55px; 
-    font-size: 0.5rem; 
-   
+    height: 70px;
+    width: 55px;
+    font-size: 0.5rem;
   }
 
   .vertical-btn {
     display: flex;
     flex-direction: row;
     align-items: center;
-    
   }
-  .footer{
+  .footer {
     text-align: left;
   }
 }
@@ -169,40 +164,38 @@ h1 {
 @media (min-width: 601px) and (max-width: 900px) {
   .first-box {
     width: 95%;
-    height: auto; 
+    height: auto;
   }
 
   h1 {
-    font-size: 4rem; 
+    font-size: 4rem;
   }
 
   .role {
-    font-size: 1.8rem; 
+    font-size: 1.8rem;
   }
 
   .do {
     margin-top: 20px;
-    font-size: 1.1rem; 
+    font-size: 1.1rem;
   }
 
   .fatou-icon {
-    width: 180px; 
-    margin-left: 0; 
-    transform: none; 
+    width: 180px;
+    margin-left: 0;
+    transform: none;
   }
 
   .btn {
-    height: 100px; 
-    width: 139px; 
-    font-size: 1rem; 
-    
+    height: 100px;
+    width: 139px;
+    font-size: 1rem;
   }
 
   .vertical-btn {
     display: flex;
     flex-direction: row;
     align-items: center;
-  
   }
 
   .footer {
