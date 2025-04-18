@@ -82,8 +82,8 @@ function App() {
     <div className="portfolio-container">
       <div className="first-box">
         <h1>Fatou Taal</h1>
-        <p className="role">Frontend Developer</p>
-        <p className="do">Pick what you need and let’s connect!</p>
+        <p id="role">Frontend Developer</p>
+        <p id="do">Pick what you need and let’s connect!</p>
       </div>
       <div className="second-box">
         <div className="vertical-btn">
